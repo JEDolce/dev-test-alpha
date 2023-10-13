@@ -24,6 +24,10 @@ body {
     overflow: hidden;
 }
 
+.intro .navigator {
+    height: 10vh;
+}
+
 .logo {
     position: absolute;
     top: 25px;
@@ -147,6 +151,86 @@ body {
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: 500;
+}
+
+.intro-content .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.intro-content h1 {
+    text-align: center;
+    line-height: 1.5;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.intro-content p {
+    font-size: 0.85rem;
+    margin-bottom: 2rem;
+}
+
+.intro-content .text {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.intro-content span {
+    color: var(--pink);
+}
+
+.counter-container {
+    border-radius: 10%;
+    margin-bottom: 2rem;
+}
+
+.counter-container h3 {
+    font-size: 0.85rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.counter-container ul {
+    padding: 0;
+    margin: 0;
+}
+
+.counter-container ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 0.35rem;
+}
+
+.counter-container ul li span {
+    display: block;
+    font-size: 1rem;
+}
+
+.intro-content button {
+    background-color: var(--pink);
+    color: white;
+    padding: 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    border: none;
+    cursor: pointer;
+}
+
+.yellow-bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--yellow);
+    z-index: -1;
+    border-radius: 10% 0 0 0;
 }
 
 
