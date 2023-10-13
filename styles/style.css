@@ -297,6 +297,9 @@ body {
     border-radius: 10px;
     padding: 1rem;
     margin-bottom: 1rem;
+    /* overflow: hidden; */
+    /* transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: contents; */
 }
 
 .quest-title {
@@ -321,9 +324,25 @@ body {
 }
 
 .quest-cont {
-    margin-top: 0.85rem;
+    opacity: 0;
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    /* transition: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: opacity, height;
+    will-change: opacity, contents; */
 }
 
-.display {
-    display: none;
+.visible {
+    margin-top: 0.85rem;
+    opacity: 1;
+    height: auto;
 }
+
+
+/* TABLET */
+
+
+
+
+/* DESKTOP */

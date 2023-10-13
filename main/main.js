@@ -67,19 +67,33 @@ const titlesArr = Array.from(document.querySelectorAll('.quest-title'));
 const paraArr = Array.from(document.querySelectorAll('.quest-cont'));
 
 
-
 for (let i = 0; i < titlesArr.length; i++) {
     titlesArr[i].addEventListener('click', () => {
 
-        if (paraArr[i].classList.contains('display')) {
-            paraArr[i].classList.remove('display');
+        if (paraArr[i].classList.contains('visible')) {
+            paraArr[i].classList.remove('visible');
             titlesArr[i].classList.add('rotate');
         } else {
-            paraArr[i].classList.add('display');
+            paraArr[i].classList.add('visible');
             titlesArr[i].classList.remove('rotate');
         }
     })
 }
+
+
+// for (let i = 0; i < titlesArr.length; i++) {
+//     titlesArr[i].addEventListener('click', () => {
+
+//         if (paraArr[i].classList.contains('display')) {
+//             paraArr[i].classList.remove('display');
+//             titlesArr[i].classList.add('rotate');
+//         } else {
+//             paraArr[i].classList.add('display');
+//             titlesArr[i].classList.remove('rotate');
+//         }
+//     })
+// }
+
 
 
 
