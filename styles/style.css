@@ -17,6 +17,7 @@ body {
     font-size: 1rem;
 }
 
+/* INTRO */
 .intro {
     min-height: 100vh;
     position: relative;
@@ -46,10 +47,6 @@ body {
     background: none;
 }
 
-#nav-btn:checked~nav ul {
-    transform: translate(-50%, -50%);
-}
-
 #nav-btn:checked+span::after,
 #nav-btn:checked+span::before {
     background-color: var(--pink);
@@ -66,6 +63,10 @@ body {
     transform: rotate(45deg);
 }
 
+#nav-btn:checked~nav ul {
+    transform: translate(-50%, -50%);
+}
+
 .navigator span {
     background-color: var(--pink);
     display: block;
@@ -78,8 +79,8 @@ body {
     cursor: pointer;
 }
 
-.navigator span::before,
-.navigator span::after {
+.navigator span::after,
+.navigator span::before {
     background-color: var(--pink);
     content: "";
     display: block;
@@ -101,7 +102,7 @@ body {
     transition-property: top, transform;
 }
 
-.navChecked {
+.navigator .navChecked {
     position: fixed;
     left: 0px;
     visibility: 1;
@@ -144,6 +145,13 @@ body {
 .navigator nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.875rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+/* FAQ */
+.faq {
+    min-height: 100vh;
+    background-color: #73c3f4;
 }
