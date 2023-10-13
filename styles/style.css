@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root {
+    --yellow: #ffd900;
+    --pink: #dd71c6;
+    --lblue: #73c3f4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Sans-serif;
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.175rem;
+}
+
+p,
+a {
+    font-size: 1rem;
+}
+
+.intro {
+    min-height: 100vh;
+    background-color: lightblue;
+    position: relative;
+}
+
+.intro .navigator {}
+
+.intro .navigator .logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.intro .navigator #nav-btn {
+    height: 65px;
+    width: 50px;
+    opacity: 0;
+    position: absolute;
+    top: 15px;
+    right: 5%;
+    z-index: 100;
+    cursor: pointer;
+}
