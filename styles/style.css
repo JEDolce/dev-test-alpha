@@ -18,6 +18,7 @@ body {
     font-family: 'Roboto', Sans-serif;
     font-size: 1rem;
     color: var(--dark-gray);
+
 }
 
 /* INTRO */
@@ -40,7 +41,6 @@ body {
 }
 
 #nav-btn {
-    /* height: 65px; */
     height: 55px;
     width: 50px;
     opacity: 0;
@@ -78,12 +78,9 @@ body {
 .navigator span {
     background-color: var(--pink);
     display: block;
-    /* height: 3px;
-    width: 35px; */
     height: 2px;
     width: 25px;
     position: absolute;
-    /* top: 45px; */
     top: 40px;
     right: 8%;
     z-index: 99;
@@ -104,13 +101,11 @@ body {
 }
 
 .navigator span::after {
-    /* bottom: -12px; */
     bottom: -8px;
     transition-property: bottom, transform;
 }
 
 .navigator span::before {
-    /* top: -12px; */
     top: -8px;
     transition-property: top, transform;
 }
@@ -192,6 +187,7 @@ body {
 
 .intro-content span {
     color: var(--pink);
+    font-weight: 600;
 }
 
 .counter-container {
@@ -262,6 +258,7 @@ body {
 .faq {
     min-height: 100vh;
     position: relative;
+    overflow-x: hidden;
 }
 
 .circle {
@@ -292,6 +289,7 @@ body {
 }
 
 .faq-content .question {
+    position: relative;
     font-size: 0.85rem;
     background-color: var(--light-gray);
     border-radius: 10px;
@@ -304,21 +302,24 @@ body {
 
 .quest-title {
     cursor: pointer;
-    padding-right: 1rem;
+    padding-right: 1.2rem;
     line-height: 1.5;
 }
 
 .quest-title::after {
     content: url('/assets/icon-arrow.svg');
     position: absolute;
-    right: 50px;
+    top: 20px;
+    right: 20px;
     transition: all 1s;
+    padding-top: 0;
 }
 
 .rotate::after {
     content: url('/assets/icon-arrow.svg');
     position: absolute;
-    right: 50px;
+    top: 20px;
+    right: 20px;
     transition: all 1s;
     transform: rotateX(180deg);
 }
@@ -341,8 +342,142 @@ body {
 
 
 /* TABLET */
+@media (min-width: 480px) {
+
+    /* INTRO */
+
+    .intro {
+        min-height: 80vh;
+    }
+
+    .logo {
+        font-size: 2rem;
+        left: 4rem;
+    }
+
+    #nav-btn {
+        height: 65px;
+    }
+
+    .navigator span {
+        height: 3px;
+        width: 30px;
+        top: 45px;
+    }
+
+    .navigator span::after,
+    .navigator span::before {
+        height: 2px;
+        width: 30px;
+    }
+
+    .navigator span::after {
+        bottom: -10px;
+    }
+
+    .navigator span::before {
+        top: -10px;
+    }
+
+    .intro-content h1 {
+        width: 60%;
+        font-size: 2.5rem;
+        padding-left: 2rem;
+        margin-bottom: 2.5rem;
+        text-align: start;
+        align-self: self-start;
+    }
+
+    .intro-content p {
+        font-size: 1.1rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .intro-content .text {
+        width: 60%;
+        padding-left: 2rem;
+        text-align: start;
+        align-self: self-start;
+    }
+
+    .counter-container {
+        padding: 2rem;
+    }
+
+    .counter-container h3 {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .counter-container ul li {
+        padding: 0.85rem;
+        font-size: 0.85rem;
+        font-weight: 500;
+        letter-spacing: 1.35px;
+    }
+
+    .counter-container ul li span {
+        display: block;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .yellow-bg {
+        top: 10%;
+    }
+
+    /* FAQ */
+    .circle {
+        display: none;
+    }
+
+    .faq button {
+        display: block;
+        margin-top: 2rem;
+        background-color: var(--pink);
+        color: white;
+        padding: 1rem;
+        font-weight: 400;
+        font-size: 1rem;
+        letter-spacing: 1.5px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .faq .container {
+        align-items: center;
+    }
+
+    .faq h1 {
+        font-size: 2.5rem;
+        width: 50%;
+        margin-bottom: 3.5rem;
+    }
+
+    .faq-content {
+        width: 60%;
+    }
+
+    .faq-content .question {
+        font-size: 1rem;
+    }
+
+    .quest-title {
+        padding-right: 1.5rem;
+    }
 
 
+
+}
 
 
 /* DESKTOP */
+@media (min-width: 1024px) {
+
+    /* INTRO */
+
+
+    /* FAQ */
+
+
+}
