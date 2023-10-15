@@ -466,6 +466,10 @@ body {
     .quest-title::after {
         transform: scale(1.5);
     }
+
+    .rotate::after {
+        transform: rotateX(180deg) scale(1.5);
+    }
 }
 
 
@@ -571,6 +575,15 @@ body {
     .faq-content {
         width: 50%;
     }
+
+    .quest-title::after {
+        transform: scale(2);
+    }
+
+    .rotate::after {
+        transform: rotateX(180deg) scale(2);
+    }
+
 
 }
 
