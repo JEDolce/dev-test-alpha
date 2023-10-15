@@ -45,13 +45,12 @@ btn.addEventListener("click", () => {
                 document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
                 document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
 
-            //do something later when date is reached
             if (distance < 0) {
                 let headline = document.getElementById("headline"),
                     section = document.getElementById("section"),
                     countdown = document.getElementById("countdown");
 
-                headline.innerText = "EMPEZO LA FIESTA!!!";
+                headline.innerText = "HELLO !!!";
                 section.style.height = "6rem"
                 countdown.style.display = "none";
 
@@ -72,27 +71,13 @@ for (let i = 0; i < titlesArr.length; i++) {
 
         if (paraArr[i].classList.contains('visible')) {
             paraArr[i].classList.remove('visible');
-            titlesArr[i].classList.add('rotate');
+            titlesArr[i].classList.remove('rotate');
         } else {
             paraArr[i].classList.add('visible');
-            titlesArr[i].classList.remove('rotate');
+            titlesArr[i].classList.add('rotate');
         }
     })
 }
-
-
-// for (let i = 0; i < titlesArr.length; i++) {
-//     titlesArr[i].addEventListener('click', () => {
-
-//         if (paraArr[i].classList.contains('display')) {
-//             paraArr[i].classList.remove('display');
-//             titlesArr[i].classList.add('rotate');
-//         } else {
-//             paraArr[i].classList.add('display');
-//             titlesArr[i].classList.remove('rotate');
-//         }
-//     })
-// }
 
 
 
