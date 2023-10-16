@@ -1,6 +1,6 @@
 # Dev Test Alpha Efficiency
 
-Tasks to evaluate frontend web development skills as part of the Alpha Efficiency company hiring process
+Tasks to evaluate frontend web development skills as part of the Alpha Efficiency company hiring process.
 
 You can find a Live Preview in the following link:
 
