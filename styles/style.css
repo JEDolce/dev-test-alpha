@@ -150,9 +150,10 @@ body {
     left: 50%;
     transform: translate(-50%, 0%);
     transition: all 1s ease-in-out;
-    moz-transition: all 1s ease-in-out;
-    o-transition: all 1s ease-in-out;
-    webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
 }
 
 .navigator nav ul li {
@@ -645,11 +646,71 @@ body {
     .intro-content h1 {
         font-size: 2.8rem;
         width: 30%;
+        animation: fade-in 3s;
+        -webkit-animation: fade-in 3s;
+        -moz-animation: fade-in 3s;
+        -o-animation: fade-in 3s;
+        -ms-animation: fade-in 3s;
     }
 
     .intro-content .text {
         font-size: 1.15rem;
         width: 30%;
+        animation: fade-in 3s;
+        -webkit-animation: fade-in 3s;
+        -moz-animation: fade-in 3s;
+        -o-animation: fade-in 3s;
+        -ms-animation: fade-in 3s;
+    }
+
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @-moz-keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes ffade-in {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @-o-keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @-ms-keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
     }
 
     .dn-lg {
