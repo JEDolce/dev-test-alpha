@@ -500,7 +500,7 @@ body {
         margin-top: 2rem;
         background-color: var(--pink);
         color: white;
-        padding: 1rem;
+        padding: 10px 14px;
         font-weight: 400;
         font-size: 1rem;
         letter-spacing: 1.5px;
@@ -614,7 +614,28 @@ body {
         color: var(--dark-gray);
         font-size: 0.875rem;
         font-weight: 400;
+        position: relative;
     }
+
+    .navigator nav ul li a::before {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        display: block;
+        width: 75%;
+        height: 1.25px;
+        background-color: var(--dark-gray);
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+    }
+
+    .navigator nav ul li a:hover::before {
+        transform: scaleX(1);
+    }
+
 
     .intro-content .container {
         padding-top: 10rem;
@@ -638,6 +659,42 @@ body {
     .intro-content button {
         align-self: self-start;
         margin-left: 2rem;
+    }
+
+    button {
+        position: relative;
+        transition: 800ms ease all;
+        outline: none;
+    }
+
+    button:hover {
+        background: #fff;
+        color: var(--pink);
+    }
+
+    button:before,
+    button:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 2px;
+        width: 0;
+        background: var(--pink);
+        transition: 400ms ease all;
+    }
+
+    button:after {
+        right: inherit;
+        top: inherit;
+        left: 0;
+        bottom: 0;
+    }
+
+    button:hover:before,
+    button:hover:after {
+        width: 100%;
+        transition: 800ms ease all;
     }
 
     .counter-container {
