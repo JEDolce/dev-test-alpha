@@ -206,7 +206,7 @@ body {
 
 .counter-container {
     margin-bottom: 2rem;
-    border-radius: 10%;
+    border-radius: 30px;
     background: rgba(255, 255, 255, 0.5);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(15px);
@@ -541,11 +541,7 @@ body {
 }
 
 /* L */
-@media (min-width: 992px) {}
-
-
-/* XL */
-@media (min-width: 1024px) {
+@media (min-width: 1110px) {
 
     /* INTRO */
     .intro {
