@@ -1,5 +1,11 @@
 # Dev Test Alpha Efficiency
 
+Tasks to evaluate frontend web development skills as part of the Alpha Efficiency company hiring process
+
+You can find a Live Preview in the following link:
+
+https://dev-test-juan.netlify.app/ 
+
 ## Task Description
 
  - Create a responsive burger menu with listed items in the navigation, as well as a countdown feature.
@@ -19,6 +25,7 @@
 - HTML
 - CSS 
 - JavaScript
+
 
 
 
