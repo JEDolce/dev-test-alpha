@@ -52,6 +52,7 @@ body {
     transform: scale(0.65);
 }
 
+/* HAMBURGUER MENU */
 #nav-btn {
     height: 55px;
     width: 50px;
@@ -268,7 +269,6 @@ body {
     z-index: -1;
     border-radius: 50px 0 0 0;
 }
-
 
 /* FAQ */
 .faq {
@@ -585,6 +585,7 @@ body {
         transform: scale(1);
     }
 
+    /* MENU */
     .navigator #nav-btn,
     .navigator span {
         display: none;
@@ -637,7 +638,7 @@ body {
         transform: scaleX(1);
     }
 
-
+    /* INTRO CONTENT */
     .intro-content .container {
         padding-top: 10rem;
         padding-left: 12vw;
@@ -651,6 +652,17 @@ body {
         -moz-animation: fade-in 3s;
         -o-animation: fade-in 3s;
         -ms-animation: fade-in 3s;
+    }
+
+    .intro-content h1 span {
+        transition: all 0.5s ease-in-out;
+        padding: 0 0.5rem;
+    }
+
+    .intro-content h1 span:hover {
+        background-color: var(--pink);
+        color: #f9f9f9;
+        transition: all 0.5s ease-in-out;
     }
 
     .intro-content .text {
