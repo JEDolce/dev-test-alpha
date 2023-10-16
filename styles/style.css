@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;700;800;900&display=swap');
 
 :root {
     --yellow: #ffd900;
     --pink: #dd71c6;
-    --light-blue: #73c3f4;
+    --light-blue: #0083D3;
     --dark-gray: #333333;
     --light-gray: #f9f9f9;
 }
@@ -15,17 +15,30 @@
 }
 
 body {
-    font-family: 'Roboto', Sans-serif;
+    font-family: 'Montserrat', Sans-serif;
     font-size: 1rem;
     color: var(--dark-gray);
-
 }
 
-/* INTRO */
+/* XS*/
 .intro {
     min-height: 100vh;
     position: relative;
     overflow: hidden;
+}
+
+.ellipse-28 {
+    position: absolute;
+    top: 20%;
+    right: 0%;
+}
+
+.ellipse-27,
+.ellipse-28-md,
+.ellipse-28-lg,
+.ellipse-29,
+.ellipse-31 {
+    display: none;
 }
 
 .intro .navigator {
@@ -162,11 +175,12 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 2rem;
+    margin-top: 0.5rem;
 }
 
 .intro-content h1 {
     font-family: 'Playfair Display', Serif;
-    font-size: 2rem;
+    font-size: 1.875rem;
     font-weight: 400;
     line-height: 1.5;
     text-align: center;
@@ -180,8 +194,8 @@ body {
 
 .intro-content .text {
     font-size: 1rem;
-    font-weight: 300;
-    line-height: 1.8;
+    font-weight: 400;
+    line-height: 1.6;
     margin-bottom: 2rem;
 }
 
@@ -219,14 +233,14 @@ body {
     padding: 0.35rem;
     text-align: center;
     color: var(--light-blue);
-    font-size: 0.75rem;
+    font-size: 8px;
     font-weight: 500;
-    letter-spacing: 1.25px;
+    letter-spacing: 2.6px;
 }
 
 .counter-container ul li span {
     display: block;
-    font-size: 1rem;
+    font-size: 18px;
     font-weight: 500;
     margin-top: 1rem;
     color: var(--dark-gray);
@@ -235,7 +249,7 @@ body {
 .intro-content button {
     background-color: var(--pink);
     color: white;
-    padding: 1rem;
+    padding: 10px 14px;
     font-weight: 400;
     font-size: 1rem;
     letter-spacing: 1.5px;
@@ -247,7 +261,7 @@ body {
     position: absolute;
     top: 0;
     left: 50%;
-    min-height: 100vh;
+    min-height: 120vh;
     width: 100%;
     background-color: var(--yellow);
     z-index: -1;
@@ -262,13 +276,16 @@ body {
     overflow-x: hidden;
 }
 
-.circle {
+.ellipse-33,
+.ellipse-34,
+.ellipse-35 {
+    display: none;
+}
+
+.ellipse-38 {
     position: absolute;
-    right: -20%;
-    height: 9rem;
-    width: 9rem;
-    border-radius: 50%;
-    border: 15px solid #f9f9f9;
+    top: 10px;
+    right: 0;
 }
 
 .faq button {
@@ -279,6 +296,11 @@ body {
     display: flex;
     flex-direction: column;
     padding: 2rem;
+    margin-top: 1rem;
+}
+
+.faq-content {
+    margin-top: 1.5rem;
 }
 
 .faq h1 {
@@ -335,19 +357,66 @@ body {
     height: auto;
 }
 
+/* S */
+@media (min-width: 380px) {
 
-/* TABLET */
+    .intro-content .container {
+        margin-top: 3rem;
+    }
+
+    .intro-content h1 {
+        font-size: 2.2rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .intro-content .text {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 2.25rem;
+        padding: 0 1rem;
+    }
+}
+
+
+/* M */
 @media (min-width: 480px) {
 
     /* INTRO */
-
     .intro {
         min-height: 80vh;
     }
 
+    .ellipse-28 {
+        display: none;
+        top: 18%;
+        right: 5%;
+    }
+
+    .ellipse-28-md {
+        display: block;
+        position: absolute;
+        top: 12%;
+        right: 0%;
+    }
+
+    .ellipse-29 {
+        display: block;
+        position: absolute;
+        bottom: 15%;
+        right: 10%;
+    }
+
+    .ellipse-31 {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 38%;
+        z-index: -1;
+    }
+
     .logo {
-        font-size: 2rem;
-        left: 4rem;
+        transform: scale(0.85);
+        left: 48px;
     }
 
     #nav-btn {
@@ -374,9 +443,13 @@ body {
         top: -10px;
     }
 
+    .intro-content .container {
+        margin-top: 1rem;
+    }
+
     .intro-content h1 {
         width: 60%;
-        font-size: 2.5rem;
+        font-size: 2.25rem;
         padding-left: 2rem;
         margin-bottom: 2.5rem;
         text-align: start;
@@ -384,23 +457,19 @@ body {
     }
 
     .intro-content p {
-        font-size: 1.1rem;
+        font-size: 1rem;
         margin-bottom: 2.5rem;
     }
 
     .intro-content .text {
-        width: 60%;
+        width: 62%;
         padding-left: 2rem;
         text-align: start;
         align-self: self-start;
     }
 
-    .counter-container {
-        padding: 2rem;
-    }
-
     .counter-container h3 {
-        font-size: 1.1rem;
+        font-size: 1rem;
         text-align: center;
     }
 
@@ -413,7 +482,7 @@ body {
 
     .counter-container ul li span {
         display: block;
-        font-size: 1.5rem;
+        font-size: 2.25rem;
         margin-top: 2rem;
     }
 
@@ -422,7 +491,7 @@ body {
     }
 
     /* FAQ */
-    .circle {
+    .ellipse-38 {
         display: none;
     }
 
@@ -471,8 +540,11 @@ body {
     }
 }
 
+/* L */
+@media (min-width: 992px) {}
 
-/* DESKTOP */
+
+/* XL */
 @media (min-width: 1024px) {
 
     /* INTRO */
@@ -480,9 +552,40 @@ body {
         min-height: 100vh;
     }
 
+    .gray-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #f9f9f9;
+        z-index: -10;
+    }
+
+    .ellipse-28-md,
+    .ellipse-29,
+    .ellipse-31 {
+        display: none;
+    }
+
+    .ellipse-27 {
+        display: block;
+        position: absolute;
+        top: 20%;
+        left: -5%;
+    }
+
+    .ellipse-28-lg {
+        display: block;
+        position: absolute;
+        top: 18%;
+        right: 0;
+    }
+
     .logo {
-        /* left: 12rem; */
-        left: 12vw;
+        top: 20px;
+        left: 14vw;
+        transform: scale(1);
     }
 
     .navigator #nav-btn,
@@ -505,7 +608,6 @@ body {
         top: 40px;
         left: 25vw;
         transform: translate(0%, 0);
-
     }
 
     .navigator nav ul li {
@@ -514,14 +616,13 @@ body {
 
     .navigator nav ul li a {
         color: var(--dark-gray);
-        font-size: 1rem;
+        font-size: 0.875rem;
         font-weight: 400;
     }
 
     .intro-content .container {
         padding-top: 10rem;
-        /* padding-left: 10rem; */
-        padding-left: 10vw;
+        padding-left: 12vw;
     }
 
     .intro-content h1 {
@@ -545,17 +646,22 @@ body {
 
     .counter-container {
         position: absolute;
-        top: 20%;
-        right: 25%;
-        padding: 3rem;
+        top: 25%;
+        right: 20%;
+        padding: 41px 36px;
     }
 
     #countdown {
         margin-top: 2.5rem;
     }
 
+    .counter-container h3 {
+        font-size: 1.125rem;
+    }
+
     .counter-container ul li {
-        letter-spacing: 5px;
+        font-size: 1.125rem;
+        letter-spacing: 5.85px;
     }
 
     .counter-container ul li span {
@@ -567,10 +673,31 @@ body {
         top: 0;
         left: 65%;
         border-radius: 60px 0 0 0;
+
     }
 
-
     /* FAQ */
+    .ellipse-33 {
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 20%;
+    }
+
+    .ellipse-34 {
+        display: block;
+        position: absolute;
+        right: 5%;
+        top: 12%;
+    }
+
+    .ellipse-35 {
+        display: block;
+        position: absolute;
+        right: 15%;
+        bottom: 12%;
+    }
+
     .faq-content {
         width: 50%;
     }
@@ -582,9 +709,4 @@ body {
     .rotate::after {
         transform: rotateX(180deg) scale(2);
     }
-
-
 }
-
-/* XXL */
-@media (min-width: 1224px) {}
